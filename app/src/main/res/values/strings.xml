@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="app_main_title">My tests application :)</string>
+    <string name="button_tap">Load DB</string>
+</resources>

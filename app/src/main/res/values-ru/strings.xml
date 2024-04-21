@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="app_main_title">Мое тестовое приложение :)</string>
+    <string name="button_tap">Загрузить БД</string>
+</resources>
