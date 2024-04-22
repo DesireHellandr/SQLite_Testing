@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onLoadDB(View view) {
         SQLiteDatabase db = getBaseContext().openOrCreateDatabase("testing.db", MODE_PRIVATE, null);
-        db.execSQL("create table if not exists users (surname TEXT, name TEXT, age INTEGER)");
-
+        db.execSQL("create table if not exists users (surname TEXT, name TEXT, age INTEGER, UNIQUE(surname, name))");
         db.execSQL("insert or ignore into users (surname, name, age) values ('Zaycev', 'Ivan', 23),('Reklin', 'Dmitriy', 19);");
 
         Cursor query = db.rawQuery("select * from users;", null);
